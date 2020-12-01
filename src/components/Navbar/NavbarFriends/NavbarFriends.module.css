@@ -1,0 +1,30 @@
+.item {
+    text-align: center;
+}
+
+.item a {
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+a.active {
+    color: peachpuff;
+    font-weight: bold;
+}
+
+.friends {
+    margin: 40px 0;
+
+}
+
+.friends a {
+    font-size: 35px;
+}
+
+.friendsList {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}

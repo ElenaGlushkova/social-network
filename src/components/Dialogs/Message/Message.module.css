@@ -1,0 +1,19 @@
+.message {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.authorAvatar {
+    width: 50px;
+    border-radius: 50%;
+    padding: 0 10px;
+}
+
+.text {
+    padding: 0 10px;
+}
+
+.myMessage {
+    flex-direction: row-reverse;
+}

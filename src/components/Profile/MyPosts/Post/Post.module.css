@@ -1,0 +1,29 @@
+.item {
+    display: flex;
+    margin: 20px;
+    margin-left: 0;
+    color: darkcyan;
+}
+
+.item img {
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+}
+
+.likesNumber {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.likesNumber::before {
+    content: '\2665';
+    color: red;
+    margin: 2px;
+}

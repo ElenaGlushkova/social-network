@@ -1,0 +1,24 @@
+.dialog {
+    padding: 10px 20px;
+}
+
+.dialog a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.dialog .active {
+    color: darkcyan;
+    font-weight: bold;
+}
+
+.avatarImg {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.avatarName {
+    padding-left: 10px;
+}

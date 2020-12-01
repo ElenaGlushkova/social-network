@@ -1,0 +1,41 @@
+.usersHeading {
+    margin-left: 40px;
+}
+
+.users {
+    display: flex;
+    margin: 20px;
+}
+
+.userPhoto {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.followButton {
+    text-align: center;
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 500px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid darkcyan;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.nameStatus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: inherit;
+}
+
+.status {
+    font-weight: normal;
+}
