@@ -51,8 +51,20 @@
     border: 2px solid darkcyan;
 }
 
+.page:focus {
+    outline: none;
+    border: 2px solid black;
+    color: black;
+    font-weight: bold;
+}
+
 .selectedPage {
     font-weight: bold;
     background-color: peachpuff;
     color: black;
+    outline: none;
+}
+
+.selectedPage:focus {
+    border-color: darkcyan;
 }
