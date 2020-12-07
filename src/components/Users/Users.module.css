@@ -39,3 +39,20 @@
 .status {
     font-weight: normal;
 }
+
+.page {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: darkcyan;
+    margin: 5px;
+    padding: 0;
+    color: white;
+    border: 2px solid darkcyan;
+}
+
+.selectedPage {
+    font-weight: bold;
+    background-color: peachpuff;
+    color: black;
+}

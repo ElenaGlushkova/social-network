@@ -7,10 +7,12 @@ import Message from "./Message/Message";
 const Dialogs = (props) => {
 
     let dialogsElements = props.dialogsPage.dialogs.map(dialog => <DialogItem name={dialog.name} id={dialog.id}
-                                                                        avatarURL={dialog.avatarURL}/>);
+                                                                              avatarURL={dialog.avatarURL}
+                                                                              key={dialog.id}/>);
     let messagesElements = props.dialogsPage.messages.map(message => <Message message={message.message}
-                                                                        author={message.author}
-                                                                        authorAvatar={message.authorAvatar}/>);
+                                                                              author={message.author}
+                                                                              authorAvatar={message.authorAvatar}
+                                                                              key={message.id}/>);
 
     let onAddMessage = () => {
         props.addMessage();

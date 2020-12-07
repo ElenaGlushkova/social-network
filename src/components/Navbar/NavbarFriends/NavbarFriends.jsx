@@ -6,7 +6,8 @@ import NavbarFriend from "./NavbarFriend/NavbarFriend";
 const NavbarFriends = (props) => {
 
     let navbarFrindsElements = props.friends.map(navbarFriend => <NavbarFriend friendName={navbarFriend.friendName}
-                                                                             friendAvatarURL={navbarFriend.friendAvatarURL}/>);
+                                                                               friendAvatarURL={navbarFriend.friendAvatarURL}
+                                                                               key={navbarFriend.id}/>);
 
     return (
         <section className={`${classes.item} ${classes.friends}`}>
