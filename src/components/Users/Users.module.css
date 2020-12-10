@@ -26,6 +26,10 @@
     padding: 10px;
     border: 2px solid darkcyan;
     border-radius: 20px;
+    font-weight: normal;
+}
+
+.userName {
     font-weight: bold;
 }
 

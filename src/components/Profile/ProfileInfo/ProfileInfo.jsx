@@ -1,7 +1,12 @@
 import React from 'react';
 import classes from './ProfileInfo.module.css';
+import Preloader from "../../common/Preloader/Preloader";
 
-const ProfileInfo = () => {
+const ProfileInfo = (props) => {
+    if(!props.profile) {
+        return <Preloader/>
+    }
+
     return (
         <article>
             <section className={classes.imageContainer}>
@@ -14,6 +19,9 @@ const ProfileInfo = () => {
                          src={'https://proprikol.ru/wp-content/uploads/2019/09/prikolnye-foto-na-avu-dlya-devochek-62.jpg'}
                          alt={''}/>
                 </div>
+                {/*<div>
+                    <img src={props.profile.photos.large} alt=""/>
+                </div>*/}
                 <ul className={classes.description}>
                     <li className={classes.name}>Elena G.</li>
                     <li>Date of Birth: 6 july</li>
