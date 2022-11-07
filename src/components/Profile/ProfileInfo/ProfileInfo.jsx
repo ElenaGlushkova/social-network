@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './ProfileInfo.module.css';
 import Preloader from "../../common/Preloader/Preloader";
+import ProfileStatus from "./ProfileStatus";
+
 
 const ProfileInfo = (props) => {
     if(!props.profile) {
@@ -11,7 +13,8 @@ const ProfileInfo = (props) => {
         <article>
             <section className={classes.imageContainer}>
                 <img className={classes.mainImage}
-                     src={'https://s1.1zoom.me/b3066/874/Shells_Sea_Beach_Sand_513034_1366x768.jpg'} alt={''}/>
+                     src={'https://s1.1zoom.me/b3066/874/Shells_Sea_Beach_Sand_513034_1366x768.jpg'}
+                     alt={''}/>
             </section>
             <section className={classes.userInfo}>
                 <div className={classes.avatar}>
@@ -23,12 +26,15 @@ const ProfileInfo = (props) => {
                     <img src={props.profile.photos.large} alt=""/>
                 </div>*/}
                 <ul className={classes.description}>
-                    <li className={classes.name}>Elena G.</li>
+                    <li className={classes.name}>Elena</li>
                     <li>Date of Birth: 6 july</li>
                     <li>City: Sevastopol</li>
                     <li>Education: SNTU'07</li>
                     <li>Web-site:</li>
                 </ul>
+            </section>
+            <section>
+                <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
             </section>
         </article>
     );

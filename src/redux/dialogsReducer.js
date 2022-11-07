@@ -1,5 +1,4 @@
 const ADD_MESSAGE = 'ADD-MESSAGE';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
 
 let initialState = {
     dialogs: [
@@ -53,8 +52,7 @@ let initialState = {
             author: 'Dimych',
             authorAvatar: 'https://cs10.pikabu.ru/post_img/big/2018/04/18/8/1524057639117058892.jpg'
         }
-    ],
-    newMessageText: ''
+    ]
 };
 
 const dialogsReducer = (state = initialState, action) => {
@@ -62,20 +60,13 @@ const dialogsReducer = (state = initialState, action) => {
         case ADD_MESSAGE: {
             let newMessage = {
                 id: 4,
-                message: state.newMessageText,
+                message: action.newMessageText,
                 author: 'me',
                 authorAvatar: 'https://proprikol.ru/wp-content/uploads/2019/09/prikolnye-foto-na-avu-dlya-devochek-62.jpg'
             };
             return {
                 ...state,
-                messages: [...state.messages, newMessage],
-                newMessageText: ''
-            };
-        }
-        case UPDATE_NEW_MESSAGE_TEXT: {
-            return {
-                ...state,
-                newMessageText: action.newMessage
+                messages: [...state.messages, newMessage]
             };
         }
         default:
@@ -83,8 +74,6 @@ const dialogsReducer = (state = initialState, action) => {
     }
 };
 
-export const addMessage = () => ({type: ADD_MESSAGE});
-export const updateNewMessageText = (textMessage) =>
-    ({type: UPDATE_NEW_MESSAGE_TEXT, newMessage: textMessage});
+export const addMessage = (newMessageText) => ({type: ADD_MESSAGE, newMessageText});
 
 export default dialogsReducer;

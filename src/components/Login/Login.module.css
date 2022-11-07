@@ -1,0 +1,32 @@
+.form,
+h1 {
+    margin-left: 20px;
+}
+
+.form input,
+.form button {
+    display: block;
+}
+
+input{
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: darkcyan;
+    height: 30px;
+}
+
+.rememberMe {
+    display: flex;
+}
+
+.rememberMe label {
+    margin-top: 5px;
+}
+
+.loginButton {
+    margin-top: 20px;
+    background-color: darkcyan;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}

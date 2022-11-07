@@ -1,0 +1,30 @@
+.field {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    border: 2px solid darkcyan;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.error {
+    border: 2px solid indianred;
+}
+
+.errorText {
+    color: white;
+    margin-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.errorTextField {
+    display: flex;
+    align-items: center;
+    background-color: indianred;
+    height: 30px;
+    border-radius: 5px;
+}

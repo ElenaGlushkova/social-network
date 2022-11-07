@@ -2,7 +2,7 @@
     display: flex;
     margin: 20px;
     margin-left: 0;
-    color: darkcyan;
+    color: black;
 }
 
 .item img {
@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     margin-left: 10px;
+    font-size: 13px;
 }
 
 .likesNumber::before {

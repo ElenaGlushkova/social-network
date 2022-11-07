@@ -6,6 +6,13 @@
     grid-template-columns: 2fr 10fr;
 }
 
-.messages {
+.addMessageButton {
+    display: block;
+    border-radius: 5px;
+    background-color: darkcyan;
+    border-color: darkcyan;
+    color: white;
+    padding: 5px 10px;
+    margin-top: 5px;
 }
 
